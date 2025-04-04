@@ -85,3 +85,11 @@ pip install -r requirements.txt
 
 # Run the inference script
 python main.py --image path/to/input_image.jpg
+
+
+## Conclusion
+This project is a **significant step towards real-time, automated chess position recognition**, bridging the gap between **physical chessboards and digital game analysis**. By integrating YOLO models and deep learning techniques, we achieve **fast, accurate, and scalable** chessboard recognition.
+
+```
+
+*For detailed implementation, refer to the code files in this repository.*
