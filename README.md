@@ -11,10 +11,10 @@ We built a custom dataset, annotated using **Roboflow**: [Dataset Link](https://
 - **Total Images After Augmentation:** 8,964
 
 ### Sample Chessboard Images from the Dataset
-![Few Samples of the Chessboard Images](https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.43.29.jpeg)
+<img src="https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.43.29.jpeg" alt="Few Samples of the Chessboard Images" width="500">
 
 ### Class Distribution Across the Dataset
-![Class Distribution](https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.35.39.jpeg)
+<img src="https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.35.39.jpeg" alt="Class Distribution" width="500">
 
 ## Methodology
 
@@ -24,7 +24,7 @@ We built a custom dataset, annotated using **Roboflow**: [Dataset Link](https://
 
 **Example Image: Input Image from Arbitrary Angle**
 
-![Input Image](https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.38.15.jpeg)
+<img src="https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.38.15.jpeg" alt="Input Image" width="500">
 
 ### 2. Perspective Transformation (Homography)
 - After detecting the chessboard, **homography transformation** was applied to warp the board to a fixed perspective.
@@ -32,7 +32,7 @@ We built a custom dataset, annotated using **Roboflow**: [Dataset Link](https://
 
 **Example Image: Warped Chessboard**
 
-![Warped Chessboard](https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.38.29.jpeg)
+<img src="https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.38.29.jpeg" alt="Warped Chessboard" width="500">
 
 ### 3. Grid Division (8×8 Chessboard Splitting)
 - The chessboard was divided into an **8×8 grid**, where each cell represents an individual chess square.
@@ -48,7 +48,7 @@ We built a custom dataset, annotated using **Roboflow**: [Dataset Link](https://
 
 **Example Output: Converted 3D Chessboard to 2D Board with FEN Score**
 
-![3D to 2D Conversion](https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.41.08.jpeg)
+<img src="https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.41.08.jpeg" alt="3D to 2D Conversion" width="500">
 
 ## Experimental Results
 Our method was extensively tested on real-world chessboard images, demonstrating **high reliability across different environments**. The **segmentation and classification models performed efficiently**, achieving:
@@ -58,7 +58,7 @@ Our method was extensively tested on real-world chessboard images, demonstrating
 
 **Example Output: Confusion Matrix of YOLOv11 Classification**
 
-![Confusion Matrix](https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.35.25.jpeg)
+<img src="https://raw.githubusercontent.com/rahulbio/Striver_Sde/refs/heads/main/WhatsApp%20Image%202025-04-04%20at%2013.35.25.jpeg" alt="Confusion Matrix" width="500">
 
 ## Applications
 This project has various applications, including:
@@ -85,11 +85,3 @@ pip install -r requirements.txt
 
 # Run the inference script
 python main.py --image path/to/input_image.jpg
-```
-
-## Conclusion
-This project is a **significant step towards real-time, automated chess position recognition**, bridging the gap between **physical chessboards and digital game analysis**. By integrating YOLO models and deep learning techniques, we achieve **fast, accurate, and scalable** chessboard recognition.
-
----
-
-*For detailed implementation, refer to the code files in this repository.*
