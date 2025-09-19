@@ -72,6 +72,10 @@ We aim to further improve our model by:
 - **Incorporating an ensemble model** for even better classification accuracy.
 - **Optimizing the pipeline for mobile deployment** to allow real-time chess position recognition on smartphones.
 
+## Web-app Live
+-   Visit https://analysechess.streamlit.app/ to view the demo version (It works only for our boards, as we trained with our chess board images, Please feel free to use the sample_image.jpeg provided in the repo).
+
+
 ## Installation & Usage
 To run this project locally, follow these steps:
 
